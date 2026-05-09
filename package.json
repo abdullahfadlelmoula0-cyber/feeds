@@ -1,0 +1,13 @@
+{
+  "name": "feed-reservation-project",
+  "private": true,
+  "description": "Run backend and frontend together",
+  "scripts": {
+    "run:backend": "cd backend && .\\venv\\Scripts\\python.exe -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8080",
+    "run:frontend": "cd frontend && npm run dev",
+    "run": "concurrently -n backend,frontend -c blue,green \"npm run run:backend\" \"npm run run:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

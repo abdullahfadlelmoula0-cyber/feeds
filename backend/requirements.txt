@@ -1,0 +1,9 @@
+fastapi>=0.109,<0.115
+uvicorn[standard]>=0.27
+sqlalchemy>=2.0
+python-jose[cryptography]>=3.3
+passlib[bcrypt]>=1.7
+python-multipart>=0.0.9
+apscheduler>=3.10
+pydantic>=2.5
+pydantic-settings>=2.0
